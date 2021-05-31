@@ -1,0 +1,24 @@
+name = Kavyansh
+age = 18
+contact = 8600339866
+members = 6
+cab = y
+place = 3
+budget = 3
+--------------------------------------------
+name = kavyansh
+age = 56
+contact = 8600339866
+members = 6
+cab = y
+place = 3
+budget = 3
+--------------------------------------------
+name = bk
+age = 68
+contact = 79
+members = 6
+cab = y
+place = 6
+budget = 2
+--------------------------------------------
