@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Creating Animations & Keyframes</title>
+    <style>
+        .cont {
+            display: flex;
+            background-color: greenyellow;
+        }
+
+        .box {
+            background-color: brown;
+            width: 400px;
+            height: 150px;
+            position: relative;
+            animation-name: kavi2;   /*it is very important to give the animation a name*/
+            animation-duration: 5s; /*it is for how many sec/milisecconds your animatiom should go*/
+            animation-iteration-count: 2;    /*it is for how many times your animation should go*/
+            /* animation-fill-mode: forwards;  it means your your animation will go forward and then stop there only. 
+            you can choose from the list anything*/
+            /* animation-timing-function: ease-in;  it will go forward slowly and then come back fastly */
+            /* animation-delay: 2s;    it will count till 2 and then start the animation */
+
+         /* if you want to make a sharthand of all animation */
+
+            /* animation: animation-name animation-duration animation-timing-function animation-delay 
+            animation-iteration-count animation-fill-mode; */
+
+                /* animation: kavi2 5s ease-in 1s 12 backwards; */
+
+
+        }
+
+        @keyframes kavi2{
+            0%{
+                width: 200px;
+                background-color: aqua;
+                color: black;
+            }
+
+            25%{
+                width: 400px;
+                background-color: blue;
+                color: white;
+            }
+
+            75%{
+                width: 600px;
+                background-color: chocolate;
+                color: black;
+            }
+
+            90%{
+                width: 800px;
+                background-color: crimson;
+                color: white;
+            }
+
+            100%{
+                width: 1000px;
+                background-color: fuchsia;
+                color: black;
+            }
+        }
+
+        @keyframes kavi {
+            from {
+                width: 100px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="box">
+            this is a box
+        </div>
+
+    </div>
+</body>
+
+</html>

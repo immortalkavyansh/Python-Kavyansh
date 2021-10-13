@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro and basic of Grids</title>
+    <style>
+
+    .cont{
+        display: grid;
+        /* grid-template-columns: 400px 200px 300px; */
+        /* grid-template-columns: 1fr 4fr 1fr;  it will divide the whole screen in the ratio of 1, 4 and 1 */
+
+        /* do you want to make 100 or 35 columns dont worry see the method below */
+        grid-template-columns: repeat(12, auto);   /*1. You will add a repeat func so you can make any no. columns:
+                                                      2. the first thing in bracket is how many no. of columns do you want
+                                                      3. the the second thing is what will be the width of each column*/
+
+        grid-gap: 2rem;                            /*it will give the gap between the item*/
+    }
+
+    .item{
+        /* height: 100px;
+        width: 100px; */
+        background-color: brown;
+        border: 2px solid rgb(0, 0, 0);
+        padding: 15px 20px;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="item">This Is Item1</div>
+        <div class="item">This Is Item2</div>
+        <div class="item">This Is Item3</div>
+        <div class="item">This Is Item4</div>
+        <div class="item">This Is Item5</div>
+        <div class="item">This Is Item6</div>
+        <div class="item">This Is Item7</div>
+        <div class="item">This Is Item8</div>
+        <div class="item">This Is Item9</div>
+        <div class="item">This Is Item9</div>
+        <div class="item">This Is Item9</div>
+        <div class="item">This Is Item9</div>
+        <div class="item">This Is Item9</div>
+    </div>
+</body>
+</html>

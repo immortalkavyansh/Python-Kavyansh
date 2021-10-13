@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        .cont{
+            height: 270px;
+            width: 100%;
+            border: 2px solid red;
+            /* this is very important to use otherwise 
+            you will be not able to use flex box */
+            display: flex;
+
+            /* flex Properties for flex container*/
+            flex-direction: row;                /*nothing will happen bcoz this is the default direction*/
+            /* flex-direction: column;          from this all the items will go downwards*/
+
+            /* flex-direction: row-reverse;     from this all the items will fill from the right side */
+
+            /* flex-direction: column-reverse;  from this all the items will fill from the bottom side */
+
+            flex-wrap: wrap;                    /*from this all the items will wrap*/
+
+            /* flex-wrap: wrap-reverse;         from this all the items will wrap in reverse direction */
+
+            /* if you want to write both flex-direction and flex-wrap you can write this in the same format */
+            /* flex-flow: row-reverse wrap; */
+
+            /* justify-content: center;           /* from this all the items will be aligned in center */
+
+            /* justify-content: space-between;     /* from this all the items will get equal spaces  */
+                                                /* between them but there will be no spaces from the margin */
+
+            /* justify-content: space-evenly;      /* from this all the items will get equal spaces  */
+                                                /* between them but there will be spaces from the margin evenly distributed */
+
+            /* justify-content: space-around; */
+
+            /* align-items: center;                this will align all the items vertically center */
+
+            /* align-items: flex-end;              this will align all the items from downwards center */
+
+            /* align-items: flex-start;            this is by default */
+            
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border: 2px solid yellow;
+            margin: 4px;
+            padding: 4px;
+        }
+
+        #item-1{
+            /* Flex properties for a flex item */
+            /* Higher the order, later it shows up in the container */
+            /* order: 2; */
+
+            /* flex-grow: 2;
+            flex-shrink: 2; */
+
+        }
+        #item-2{
+            /* flex-grow: 3;
+            flex-shrink: 3 ; */
+            flex-basis: 160px;
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+        }
+        #item-3{
+            /* flex: 2 2 230px; */
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+
+            }
+    </style>
+</head>
+<body>
+    <h3>Flex box tutorial</h3>
+    <div class="cont">
+        <div class="item" id="item1">first box</div>
+        <div class="item" id="item2">second box</div>
+        <div class="item" id="item3">third box</div>
+        <div class="item" id="item4">forth box</div>
+        <div class="item" id="item5">fifth box</div>
+        <div class="item" id="item6">sixth box</div>
+
+    </div>
+    
+</body>
+</html>

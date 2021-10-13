@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Visibility & z-index</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+        }
+
+        /* z-index works only when your position is (fixed, absoulute, 
+        relative, sticky) [Default position is{static}] */
+        #box1 {
+            position: relative;
+            top: 49px;
+            z-index: -145px;
+            /*whose ever z-index will be greater it will be shown big on the screen*/
+            background-color: red;
+        }
+
+        #box2 {
+            /* display: none;  */
+            /*ye gayab kar de ga place ko*/
+
+            /* visibility: hidden; */
+            /*this will hide your element(whatever you have given to it) */
+            position: relative;
+            top: 14px;
+            z-index: -35px;
+            background-color: purple;
+        }
+
+        #box3 {
+            background-color: orange;
+        }
+
+        #box4 {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+
+
+</body>
+
+</html>
